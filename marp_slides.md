@@ -3,14 +3,13 @@ marp: true
 author: Joan G.
 theme: default
 class: invert
+backgroundImage: "linear-gradient(to right, #0f2027, #203a43, #2c5364)"
 
 ---
 
-# My First Slide
+# Building slides as code with Marp
 
-Hello World!
-
-![bg](img/pexels-daniel-putzer-633409.jpg)
+![bg opacity:.7](img/pexels-daniel-putzer-633409.jpg)
 
 ---
 
@@ -18,7 +17,7 @@ Hello World!
 
 - Repeatable way to build slides
 - Integrate slide with some repository
-- Sharing ``code examples`` with presentation
+- Sharing ``code examples`` with in a nice way
 
 ---
 
@@ -29,7 +28,6 @@ Nice and dark 🌔
 ```markdown
 ---
 marp: true
-author: Joan G.
 theme: default
 class: invert
 ```
@@ -62,3 +60,80 @@ Say thanks! - add a reference to the author or collection.
 - [Dracula](https://draculatheme.com/marp)
 - [Beam](https://rnd195.github.io/marp-community-themes/theme/beam.html)
 - [Marpstyle](https://github.com/cunhapaulo/marpstyle)
+
+---
+
+# Using Community Themes
+
+- Add CSS from some community repos
+- Add VScode settings
+
+````json
+{
+    "markdownlint.config": {
+        "default":true,
+        // allow multiple H1s for Marp
+        "MD025":false,
+        "MD032": false
+    },
+    "markdown.marp.themes": [
+        "./themes/dracula.css"
+    ]
+}
+````
+
+- Update theme: e.g. `theme: dracula`
+- Update the workflow
+
+---
+
+# Using Gradient Background
+
+```yaml
+backgroundImage: "linear-gradient(to right, #0f2027, #203a43, #2c5364)"
+```
+
+Where to find gradients and colors:
+
+- [Uigradients](https://uigradients.com)
+- [HappyHues](https://happyhues.co)
+
+---
+
+# How to Use Animated Images
+
+- This looks amazing on a starting page
+
+```markdown
+![bg right fit](https://github.com/srl-labs/containerlab/raw/main/docs/images/containerlab_export_white_ink.svg?sanitize=true)
+```
+
+![bg right fit](https://github.com/srl-labs/containerlab/raw/main/docs/images/containerlab_export_white_ink.svg?sanitize=true)
+
+---
+
+# Using Lists
+
+```markdown
+- item1
+- item2
+```
+
+- item1
+- item2
+
+---
+
+# Animated Lists
+
+- Some item
+  - sub item
+
+* This will be hidden at first
+
+```markdown
+- Some item
+  - sub item
+
+* This will be hidden at first
+```
