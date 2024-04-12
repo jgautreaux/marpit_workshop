@@ -5,6 +5,7 @@ theme: default
 class: invert
 
 ---
+
 # My First Slide
 
 Hello World!
@@ -12,12 +13,15 @@ Hello World!
 ![bg](img/pexels-daniel-putzer-633409.jpg)
 
 ---
+
 # Use Cases for Marp
+
 - Repeatable way to build slides
 - Integrate slide with some repository
 - Sharing ``code examples`` with presentation
 
 ---
+
 # How to change Theme
 
 Nice and dark 🌔
@@ -33,6 +37,7 @@ class: invert
 ---
 
 # To get Free Pictures
+
 ![bg right](img/pexels-andrea-piacquadio-3758104.jpg)
 
 Use:
@@ -45,6 +50,15 @@ How to work with images:
 Say thanks! - add a reference to the author or collection.
 
 ---
+
 ![bg blur:2px](img/pexels-andrea-piacquadio-3758104.jpg)
 ![bg opacity:.7](img/pexels-andrea-piacquadio-3758104.jpg)
 ![bg sepia](img/pexels-andrea-piacquadio-3758104.jpg)
+
+---
+
+# More Marp Themes
+
+- [Dracula](https://draculatheme.com/marp)
+- [Beam](https://rnd195.github.io/marp-community-themes/theme/beam.html)
+- [Marpstyle](https://github.com/cunhapaulo/marpstyle)

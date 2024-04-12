@@ -1,0 +1,11 @@
+{
+    "markdownlint.config": {
+        "default":true,
+        // allow multiple H1s for Marp
+        "MD025":false,
+        "MD032": false
+    },
+    "markdown.marp.themes": [
+        "./themes/dracula.css"
+    ]
+}
