@@ -5,7 +5,7 @@ on:
   push:
     branches: [ master ]
     paths:
-    - slides/**
+    - marp_slides.md
     - img/**
     - .github/workflows/marp-to-pages.yml
 permissions:
